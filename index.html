@@ -3,11 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Tailwind and desiUi link  -->
-     
+    <title>Donate Bangladesh</title>
+     <!-- Tailwind and desiUi link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google lexlend font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: "Lexend", sans-serif;
+        }
+    </style>
+
 </head>
 <body>
-    
+    <!-- This is header  -->
+     <header>
+      <section class="bg-[#f9f7f3] p-2">
+        <div class="navbar container mx-auto">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li><a>Item 1</a></li>
+                  <li>
+                    <a>Parent</a>
+                    <ul class="p-2">
+                      <li><a>Submenu 1</a></li>
+                      <li><a>Submenu 2</a></li>
+                    </ul>
+                  </li>
+                  <li><a>Item 3</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-xl bg-[#b4f461] rounded-lg">Blog</a>
+            </div>
+            <div class="navbar-center hidden lg:flex gap-4">
+             <div class="img">
+                <img src="assets/logo.png" class="w-[48px] h-[48px]" alt="">
+             </div>
+             <h2 class="text-xl font-bold">Donate Bangladesh</h2>
+            </div>
+            <div class="navbar-end gap-2">
+              <img src="assets/coin.png" alt="">
+              <p>1000 BDT</p>
+            </div>
+          </div>
+      </section>
+          
+          <!-- btn section  -->
+
+          <div class="flex justify-center gap-4 mt-8 mb-10">
+            <button class="bg-[#b4f461] rounded-lg p-2 w-[100px]">Donation</button>
+            <button class="bg-[#b4f461] rounded-lg p-2 w-[100px]">History</button>
+          </div>
+     </header>
+
+     <!-- this is main section  -->
+
+     <main>
+        <!-- donate section card -->
+         <!-- card - 1 -->
+          <section class="container mx-auto border-2 rounded-lg p-4 mb-8">
+            <!-- main div  -->
+            <div class="flex gap-5">
+                <!-- left side  -->
+                 <div>
+                    <img src="assets/noakhali.png" class="w-[522px] h-[420px]" alt="">
+                 </div>
+                 <!-- right side  -->
+                 <div>
+                    <div class="flex gap-4 items-center w-32 bg-[#1111110D] p-2 rounded-lg">
+                        <img src="assets/coin.png" alt="">
+                        <h2>0 BDT</h2>
+                    </div>
+                    <h2 class="text-xl font-bold mt-4">Donate for Flood Relief in Feni,Bangladesh</h2>
+                    <p class="w-[522px] mt-2">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+                    <!-- input box -->
+
+                    <input type="text" placeholder="Donate Amount" class="input input-bordered w-full mt-4">
+                    <button class="bg-[#b4f461] rounded-lg p-3 w-full font-bold mt-4">Donate Now</button>
+                 </div>
+            </div>
+          </section>
+         <!-- card - 2 -->
+          <section class="container mx-auto border-2 rounded-lg p-4 mb-8">
+            <!-- main div  -->
+            <div class="flex gap-5">
+                <!-- left side  -->
+                 <div>
+                    <img src="assets/feni.png" class="w-[522px] h-[420px]" alt="">
+                 </div>
+                 <!-- right side  -->
+                 <div>
+                    <div class="flex gap-4 items-center w-32 bg-[#1111110D] p-2 rounded-lg">
+                        <img src="assets/coin.png" alt="">
+                        <h2>0 BDT</h2>
+                    </div>
+                    <h2 class="text-xl font-bold mt-4">Donate for Flood Relief in Feni,Bangladesh</h2>
+                    <p class="w-[522px] mt-2">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+                    <!-- input box -->
+
+                    <input type="text" placeholder="Donate Amount" class="input input-bordered w-full mt-4">
+                    <button class="bg-[#b4f461] rounded-lg p-3 w-full font-bold mt-4">Donate Now</button>
+                 </div>
+            </div>
+          </section>
+         <!-- card - 3 -->
+          <section class="container mx-auto border-2 rounded-lg p-4">
+            <!-- main div  -->
+            <div class="flex gap-5">
+                <!-- left side  -->
+                 <div>
+                    <img src="assets/quota-protest.png" class="w-[522px] h-[420px]" alt="">
+                 </div>
+                 <!-- right side  -->
+                 <div>
+                    <div class="flex gap-4 items-center w-32 bg-[#1111110D] p-2 rounded-lg">
+                        <img src="assets/coin.png" alt="">
+                        <h2>0 BDT</h2>
+                    </div>
+                    <h2 class="text-xl font-bold mt-4">Donate for Flood Relief in Feni,Bangladesh</h2>
+                    <p class="w-[522px] mt-2">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+                    <!-- input box -->
+
+                    <input type="text" placeholder="Donate Amount" class="input input-bordered w-full mt-4">
+                    <button class="bg-[#b4f461] rounded-lg p-3 w-full font-bold mt-4">Donate Now</button>
+                 </div>
+            </div>
+          </section>
+     </main>
+
+     <!-- this is footer  -->
+      <footer>
+      
+      </footer>
+
+      <!-- others link  -->
+
 </body>
 </html>
