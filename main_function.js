@@ -30,10 +30,5 @@ function showAndHideButton(id){
 
 // blog button 
 function goToBlog() {
-    window.location.href = 'blog.html'; // Redirect to blog page
-  }
-
-//   go home button 
-function goHome() {
-    window.location.href = 'index.html';
+    window.location.href = 'blog.html';
   }
