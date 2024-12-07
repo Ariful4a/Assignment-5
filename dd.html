@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Page</title>
+    <style>
+        .transaction-list {
+            margin-top: 20px;
+        }
+        .transaction-item {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Donate</h1>
+    <button id="donateButton">Donate</button>
+    <div class="transaction-list" id="transactionList"></div>
+
+    <script>
+        const donateButton = document.getElementById('donateButton');
+        const transactionList = document.getElementById('transactionList');
+
+        donateButton.addEventListener('click', () => {
+            const now = new Date(); // Current date and time
+            // const formattedDate = now.toLocaleString(); // Format date and time
+
+            // Create a new transaction item
+            const transactionItem = document.createElement('div');
+            transactionItem.classList.add('transaction-item');
+            transactionItem.textContent = `Donation made on: ${now}`;
+
+            // Add the transaction item to the list
+            transactionList.appendChild(transactionItem);
+        });
+    </script>
+</body>
+</html>
