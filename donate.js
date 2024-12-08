@@ -5,13 +5,16 @@ document.getElementById('first-donate').addEventListener('click', function (even
     
     const addMoney = inputFieldId('first-field');
     const mainBalance = textFieldId('main-balance');
+    // modal show
+    const modal = document.getElementById('modal');
+    
 
     if(!isNaN(addMoney)){
         const balance = textFieldId('add-balance');
         const addNewBalance = balance + addMoney;
 
         if(addMoney > mainBalance){
-            alert('Insufficient balance');
+            alert('No enough balance');
             return;
         }
         else if(addMoney < 0){
@@ -19,8 +22,9 @@ document.getElementById('first-donate').addEventListener('click', function (even
             return;
         }
         else{
-            alert('Balance added');
+            modal.classList.remove('hidden');
         }
+        
 
         // set balance
         document.getElementById('add-balance').innerText = addNewBalance;
@@ -48,6 +52,12 @@ document.getElementById('first-donate').addEventListener('click', function (even
 
 
 });
+
+// card 1 modal colse button 
+document.getElementById('close').addEventListener('click', function(){
+    const closeModal = document.getElementById('modal');
+    closeModal.classList.add('hidden');
+});
 // add input money card-2
 
 document.getElementById('second-donate-btn').addEventListener('click', function (event){
@@ -55,6 +65,9 @@ document.getElementById('second-donate-btn').addEventListener('click', function 
     
     const addMoney = inputFieldId('second-field');
     const mainBalance = textFieldId('main-balance');
+
+     // modal show
+     const modal = document.getElementById('modal');
 
     if(!isNaN(addMoney)){
         const balance = textFieldId('second-balance');
@@ -68,7 +81,7 @@ document.getElementById('second-donate-btn').addEventListener('click', function 
             return;
         }
         else{
-            alert('Balance added');
+            modal.classList.remove('hidden');
         }
 
 
